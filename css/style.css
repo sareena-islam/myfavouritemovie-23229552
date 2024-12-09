@@ -28,7 +28,7 @@ body {
 }
 p {
 	color: #252525;
-	line-height: 24px;
+	line-height: 34px;
 	margin: 0;
 	padding: 0;
 }
@@ -97,6 +97,7 @@ p a:hover {
 	padding: 0 0 30px;
 	text-align: center;
 }
+
 #body h1 {
 	color: #fff;
 	display: inline;
