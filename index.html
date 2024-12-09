@@ -1,0 +1,110 @@
+<!doctype html>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Favourite Movie</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<link rel="stylesheet" href="css/mystyle-popup.css">
+	<script type="text/javascript" src="js/mobile.js"></script>
+</head>
+<body>
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<span class="close-popup" onclick="closePopup()">×</span>
+			<h2>Welcome to My Favourite Movie Blogpost!</h2>
+			<p>Here I will talk about my favourite movie and the characters in that movie</p>
+		</div>
+	</div>
+	
+	<div id="header">
+		<h1>My Favourite Movie</h1>
+	</div>
+	<div id="body">
+		<div id="featured">
+			<img src="images/poster.jpg" alt="infinity-war-poster">
+			<div>
+				<h2>Avengers: Infinity War</h2>
+				<span>As Thanos sets about his quest for finding the infinity 
+					stones and carrying out his twisted scheme, the Avengers 
+					join forces with their allies to stop him from causing chaos and destruction.</span>
+			</div>
+		</div>
+		<h2>Main Characters</h2>
+		<ul class="character-list">
+			<li>
+				<div class="character">
+					<img src="images/ironman.jpg" alt="ironman">
+					<span>Ironman</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/captain.jpg" alt="captain">
+					<span>Captain America</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/thanos.jpg" alt="thanos">
+					<span>Thanos</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/black-widow.jpg" alt="black-widow">
+					<span>Black Widow</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/hulk.jpg" alt="hulk">
+					<span>Hulk</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/thor.jpg" alt="thor">
+					<span>Thor</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/doctor-strange.jpg" alt="doctor-strange">
+					<span>Doctor Strange</span>
+				</div>
+			</li>
+			<li>
+				<div class="character">
+					<img src="images/spiderman.jpg" alt="spiderman">
+					<span>Spider-Man</span>
+				</div>
+			</li>
+		</ul>
+
+
+	</div>
+	<div id="footer">
+		<div>
+			<p>Name: Sareena Islam  	ID:23229552</p>
+		</div>
+	</div>		
+	<script>
+		// this will show the pop-up when the page loads
+		document.addEventListener("DOMContentLoaded", function () {
+			const popup = document.getElementById("popup");
+			popup.style.display = "flex";
+		});
+	
+		// this function will close the pop-up
+		function closePopup() {
+			const popup = document.getElementById("popup");
+			popup.style.display = "none"; // Hide the pop-up
+		}
+	</script>
+	
+	
+</body>
+</html>
