@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
 	<link rel="stylesheet" href="css/mystyle-popup.css">
-	<script type="text/javascript" src="js/mobile.js"></script>
 </head>
 <body>
 	<div id="popup" class="popup">
@@ -32,6 +31,31 @@
 					join forces with their allies to stop him from causing chaos and destruction.</span>
 			</div>
 		</div>
+	<div class="description">
+		<p>
+			Welcome to my Website!! Here I mentioned my favourite movie is "Avengers: Infinity war."
+			First I have downloaded a free template from "freewebsitetemplates.com". Then I have removed existing
+			images and inserted my downloaded images which match my website content. I have added a 'welcome pop-up'
+			with the help of js and customised css which pops up every time the homepage is loaded. The new js file is
+			named "welcome.js" and my customised css are in the "mystyle-popup.css" file. 
+		</p>
+		<p>
+			The movie title and descriptions
+			are using the template's css. But I have customised the "Main Characters" section below and added css myself.
+			After this description section I have added a input box which asks user to guess my favourite character. 
+			I implemented a js function to match the user input with my favourite character (ironman) and if it matches
+			then it opens a message to let user know about it.
+		</p>
+		<p> 
+			Finally, I have added my Name and ID in the footer section of this website. Happy Browsing!!
+		</p>
+	</div>
+		<div id="guess-section">
+			<h2>Guess My Favorite Character</h2>
+			<input type="text" id="guess-input" placeholder="Enter your guess here">
+			<button onclick="checkGuess()">Submit</button>
+		</div>
+
 		<h2>Main Characters</h2>
 		<ul class="character-list">
 			<li>
@@ -91,20 +115,6 @@
 			<p>Name: Sareena Islam  	ID:23229552</p>
 		</div>
 	</div>		
-	<script>
-		// this will show the pop-up when the page loads
-		document.addEventListener("DOMContentLoaded", function () {
-			const popup = document.getElementById("popup");
-			popup.style.display = "flex";
-		});
-	
-		// this function will close the pop-up
-		function closePopup() {
-			const popup = document.getElementById("popup");
-			popup.style.display = "none"; // Hide the pop-up
-		}
-	</script>
-	
-	
+	<script type="text/javascript" src="js/welcome.js"></script>
 </body>
 </html>
